@@ -9,11 +9,21 @@
   <body>
 
     <div id='top'>
-      <div id='something'>something</div>
-      <div id='anotherSomething'>iOS and Web developer</div>
+
+      <div id='somethingContainer'>
+        <div id='something'>temp something</div>
+        <div id='anotherSomething'>iOS and Web developer</div>
+      </div>
+
+      <div id='somethingInteresting'>
+
+      </div>
+
     </div>
 
-    <div id='somethingInteresting'>something</div>
+    <div id='linksContainer'>
+      Email | Github
+    </div>
 
     <h1 id='summery'>Summery</h1>
     <p id='summeryParagraph'>
@@ -62,7 +72,7 @@
 
     </ul>
 
-    <h1>Projects</h1>
+    <h1>work in progress.....</h1>
     <ul class='list'>
       <li>something</li>
       <li>something</li>
@@ -74,23 +84,49 @@
 
   <style type='text/css'>
   #top {
-    height: 150px;
+
   }
   #somethingInteresting {
-    border :1px solid black;
-    height: 150px;
+    border: 1px solid white;
+    border-bottom: 2px solid rgb(225, 225, 225);
+    height: 400px;
+    margin-top: -100px;
+  }
+  #top #somethingContainer {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #somethingOpenSource {
+    position: absolute;
+    margin-top: 275px;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    font-size: 17px;
   }
   #top #something {
-    border: 1px solid black;
+    text-align: center;
     font-size: 30px;
     width: 250px;
     height: 50px;
   }
   #top #anotherSomething {
-    border: 1px solid black;
     text-align: center;
     width: 250px;
     height: 50px;
+  }
+  #linksContainer {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 350px;
+    text-align: center;
+    font-size: 20px;
+  }
+  a {
+    color: black;
   }
   #summery {
   }

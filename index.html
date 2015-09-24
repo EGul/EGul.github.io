@@ -46,49 +46,46 @@
     </p>
 
     <h1 id='skills'>I currently work with</h1>
-    <ul class='list' id='skillsList'>
+    <ul class='list'>
 
-      <li>Programming Languages
-        <ul class='list'>
-          <li>
+      <li class='item'>Programming Languages
+        <ul>
+          <li><span>Objective-C</span></li>
+          <li><span>C - (Mostly in relation to Objective-C)</span></li>
+          <li><span>Javascript</span></li>
+          <li><span>Python</span></li>
+        </ul>
+      </li class='item'>
 
-          </li>
-          <li>Objective-C</li>
-          <li>C - (Mostly in relation to Objective-C)</li>
-          <li>Javascript</li>
-          <li>Python</li>
+      <li class='item'>Markup & Formats
+        <ul>
+          <li><span>HTML</span></li>
+          <li><span>CSS</span></li>
+          <li><span>LESS</span></li>
+          <li><span>JSON</span></li>
         </ul>
       </li>
 
-      <li>Markup & Formats
-        <ul class='list'>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>LESS</li>
-          <li>JSON</li>
+      <li class='item'>Frameworks & Technologies
+        <ul>
+          <li><span>AngularJS</span></li>
+          <li><span>JQuery</span></li>
+          <li><span>Node</span></li>
+          <li><span>Express</span></li>
         </ul>
       </li>
 
-      <li>Frameworks & Technologies
-        <ul class='list'>
-          <li>AngularJS</li>
-          <li>JQuery</li>
-          <li>Node</li>
-          <li>Express</li>
+      <li class='item'>Databases
+        <ul>
+          <li><span>MySQL</span></li>
+          <li><span>RethinkDB</span></li>
+          <li><span>Core-Data</span></li>
         </ul>
       </li>
 
-      <li>Databases
-        <ul class='list'>
-          <li>MySQL</li>
-          <li>RethinkDB</li>
-          <li>Core-Data</li>
-        </ul>
-      </li>
-
-      <li>Version Control
-        <ul class='list'>
-          <li>Git</lit>
+      <li class='item'>Version Control
+        <ul>
+          <li><span>Git</span></lit>
         </ul>
       </li>
 
@@ -193,11 +190,28 @@
   #skills {
   }
   .list {
+    padding-left: 0px;
+    text-align: center;
     list-style-type: none;
   }
-  #skillsList {
-
+  .list .item {
+    display: inline-block;
+    border: 10px solid white;
+  }
+  .list ul {
+    padding-left: 0px;
     list-style-type: none;
+  }
+  .list ul li {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .list ul li span {
+    border: 10px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    background-color: rgb(200, 200, 200);
+    color: white;
   }
   </style>
 

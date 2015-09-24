@@ -22,30 +22,27 @@
         <div id='anotherSomething'>iOS and Web developer</div>
       </div>
 
-      <!-- <div id='somethingOpenSource'>polygon-sea</div> -->
-      <div id='somethingOpenSourceContainer'>
-        <a id='somethingOpenSource' href='https://github.com/egul/polygon-sea'>polygon-sea</a>
-      </div>
-
       <div id='somethingInteresting'>
         <div id='tempSomethingInterestingContainer'>
+          <div id='somethingOpenSourceContainer'>
+            <a id='somethingOpenSource' href='https://github.com/egul/polygon-sea'>polygon-sea</a>
+          </div>
           <canvas id='tempSomethingInteresting' height='300' width='1200'></canvas>
+          <div id='linksContainer'>
+            <a id='emailLink' href='mailto:evangulyas@outlook.com' >Email</a> | <a id='githubLink' href='https://github.com/egul'>Github</a>
+          </div>
         </div>
       </div>
 
     </div>
 
-    <div id='linksContainer'>
-      <a id='emailLink' href='mailto:evangulyas@outlook.com' >Email</a> | <a id='githubLink' href='https://github.com/egul'>Github</a>
-    </div>
-
-    <h1 id='summery'>About me</h1>
+    <h2 id='summery'>About me</h2>
     <p id='summeryParagraph'>
       Software developer. Mostly iOS and Web development.<br>
       Interested in working on useful and/or interesting projects.
     </p>
 
-    <h1 id='skills'>I currently work with</h1>
+    <h2 id='skills'>I currently work with</h2>
     <ul class='list'>
 
       <li class='item'>Programming Languages
@@ -114,7 +111,7 @@
       setInterval(polygonSea.setMove, 25);
       setInterval(polygonSea.move, 50);
     }
-    move();
+    // move();
 
     </script>
 
@@ -122,17 +119,12 @@
 
   <style type='text/css'>
   #top {
-
   }
   #somethingInteresting {
-    border: 1px solid white;
-    height: 400px;
     margin-top: -100px;
   }
   #somethingInteresting #tempSomethingInterestingContainer {
-    height: 300px;
     width: 1200px;
-    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -143,11 +135,11 @@
   }
   #somethingOpenSourceContainer {
     position: absolute;
-    margin-top: 275px;
+    margin-top: 350px;
     margin-left: 5px;
-    height: 25px;
-    width: 100px;
-    text-align: center;
+  }
+  #tempSomethingInteresting {
+    margin-top: 75px;
   }
   #somethingOpenSourceContainer #somethingOpenSource {
     color: rgb(240, 240, 240);
@@ -166,13 +158,9 @@
     height: 50px;
   }
   #linksContainer {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
-    width: 350px;
-    text-align: center;
-    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 25px;
+    font-size: 17px;
   }
   #githubLink {
     text-decoration: none;
@@ -184,10 +172,15 @@
     color: black;
   }
   #summery {
+    text-align: center;
   }
   #summeryParagraph {
+    text-align: center;
+    margin-bottom: 75px;
   }
   #skills {
+    text-align: center;
+    margin-bottom: 25px;
   }
   .list {
     padding-left: 0px;

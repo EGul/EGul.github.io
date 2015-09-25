@@ -77,12 +77,16 @@
           <li><span>MySQL</span></li>
           <li><span>RethinkDB</span></li>
           <li><span>Core-Data</span></li>
+          <li class='listNull'><span>null</span></li>
         </ul>
       </li>
 
       <li class='item'>Version Control
         <ul>
           <li><span>Git</span></lit>
+          <li class='listNull'><span>null</span></li>
+          <li class='listNull'><span>null</span></li>
+          <li class='listNull'><span>null</span></li>
         </ul>
       </li>
 
@@ -111,7 +115,7 @@
       setInterval(polygonSea.setMove, 25);
       setInterval(polygonSea.move, 50);
     }
-    // move();
+    move();
 
     </script>
 
@@ -180,7 +184,6 @@
   }
   #skills {
     text-align: center;
-    margin-bottom: 25px;
   }
   .list {
     padding-left: 0px;
@@ -189,22 +192,23 @@
   }
   .list .item {
     display: inline-block;
-    border: 10px solid white;
+    border: 15px solid white;
+    font-size: 20px;
+    font-weight: bold;
   }
   .list ul {
     padding-left: 0px;
     list-style-type: none;
   }
   .list ul li {
-    display: inline-block;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 5px;
+    font-weight: normal;
+  }
+  .list ul .listNull {
+    color: white;
   }
   .list ul li span {
-    border: 10px solid rgb(200, 200, 200);
-    border-radius: 5px;
-    background-color: rgb(200, 200, 200);
-    color: white;
+    font-size: 17px;
   }
   </style>
 

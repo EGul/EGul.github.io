@@ -15,26 +15,17 @@
 
   <body>
 
-    <div id='top'>
+    <div id='something'>temp something</div>
+    <div id='anotherSomething'>iOS and Web developer</div>
 
-      <div id='somethingContainer'>
-        <div id='something'>temp something</div>
-        <div id='anotherSomething'>iOS and Web developer</div>
+    <div id='poloygonSeaContainer'>
+      <div>
+        <canvas id='polygonSea' height='300' width='1200'></canvas>
       </div>
-
-      <div id='somethingInteresting'>
-        <div id='tempSomethingInterestingContainer'>
-          <div id='somethingOpenSourceContainer'>
-            <a id='somethingOpenSource' href='https://github.com/egul/polygon-sea'>polygon-sea</a>
-          </div>
-          <canvas id='tempSomethingInteresting' height='300' width='1200'></canvas>
-          <div id='linksContainer'>
-            <a id='emailLink' href='mailto:evangulyas@outlook.com' >Email</a> | <a id='githubLink' href='https://github.com/egul'>Github</a>
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <div id='polygonSeaLinkContainer'><a href='https://github.com/egul/polygon-sea'>polygon-sea</a></div>
+    <div id='linksContainer'><a href='mailto:evangulyas@outlook.com'>Email</a> | <a href='https://github.com/egul'>Github</a></div>
 
     <h2 id='summery'>About me</h2>
     <p id='summeryParagraph'>
@@ -102,12 +93,12 @@
     <script type='text/javascript'>
 
     var opts = {
-      id: 'tempSomethingInteresting',
+      id: 'polygonSea',
       xBlocks: 10,
       yBlocks: 100,
       rotateX: -70,
       translateZ: -25,
-      translateY: -5,
+      translateY: -4,
       color: [0.25, 0.25, 0.25, 1],
       gradientBlocks: 11,
       gradientTop: true,
@@ -116,9 +107,12 @@
     var polygonSea = new PolygonSea(opts);
     polygonSea.setup();
 
+    var tempInterval = null
+    var moveInterval = null;
+
     function move() {
-      setInterval(polygonSea.setMove, 25);
-      setInterval(polygonSea.move, 50);
+      tempInterval = setInterval(polygonSea.setMove, 25);
+      moveInterval = setInterval(polygonSea.move, 50);
     }
     move();
 
@@ -127,58 +121,49 @@
   </body>
 
   <style type='text/css'>
-  #top {
-  }
-  #somethingInteresting {
-    margin-top: -100px;
-  }
-  #somethingInteresting #tempSomethingInterestingContainer {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #top #somethingContainer {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #somethingOpenSourceContainer {
-    position: absolute;
-    margin-top: 350px;
-    margin-left: 5px;
-  }
-  #tempSomethingInteresting {
-    margin-top: 75px;
-  }
-  #somethingOpenSourceContainer #somethingOpenSource {
-    color: rgb(240, 240, 240);
-    font-size: 17px;
-    text-decoration: none;
-  }
-  #top #something {
+  #something {
     text-align: center;
     font-size: 30px;
-    width: 250px;
-    height: 50px;
   }
-  #top #anotherSomething {
+  #anotherSomething {
+    margin-top: 10px;
     text-align: center;
-    width: 250px;
-    height: 50px;
+  }
+  #poloygonSeaContainer {
+    margin-top: 100px;
+    height: 300px;
+  }
+  #poloygonSeaContainer div {
+    position: absolute;
+    width: 1200px;
+    left: -10000px;
+    right: -10000px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+  }
+  #polygonSeaLinkContainer {
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+  #polygonSeaLinkContainer a {
+    margin-left: 5px;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
   }
   #linksContainer {
-    margin-left: 5px;
-    margin-top: 25px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+  #linksContainer a {
     font-size: 17px;
-  }
-  #githubLink {
-    text-decoration: none;
-  }
-  #emailLink {
-    text-decoration: none;
-  }
-  a {
     color: black;
+    text-decoration: none;
   }
   #summery {
     text-align: center;

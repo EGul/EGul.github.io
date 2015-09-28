@@ -18,6 +18,8 @@
 
   <body>
 
+    <div id='linksContainer'><span><a href='mailto:evangulyas@outlook.com'>Email</a> | <a href='https://github.com/egul'>Github</a></span></div>
+
     <div id='something'>Evan Gulyas</div>
     <div id='anotherSomething'>iOS and Web developer</div>
 
@@ -28,7 +30,6 @@
     </div>
 
     <div id='polygonSeaLinkContainer'><a href='https://github.com/egul/polygon-sea'>polygon-sea</a></div>
-    <div id='linksContainer'><a href='mailto:evangulyas@outlook.com'>Email</a> | <a href='https://github.com/egul'>Github</a></div>
 
     <h2 id='summery'>About me</h2>
     <p id='summeryParagraph'>
@@ -131,7 +132,6 @@
     overflow-x: hidden;
   }
   #something {
-    margin-top: 25px;
     text-align: center;
     font-size: 35px;
     font-family: 'Quicksand';
@@ -169,12 +169,14 @@
     text-decoration: none;
   }
   #linksContainer {
-    margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
   }
-  #linksContainer a {
+  #linksContainer span {
+    margin-left: 5px;
+  }
+  #linksContainer span a {
     font-size: 17px;
     color: black;
     text-decoration: none;
@@ -185,7 +187,6 @@
   }
   #summeryParagraph {
     text-align: center;
-    margin-bottom: 75px;
     font-weight: 300;
   }
   .list {

@@ -58,7 +58,6 @@
           <li><span>CSS</span></li>
           <li><span>LESS</span></li>
           <li><span>JSON</span></li>
-          <li class='listNull'><span>null</span></li>
         </ul>
       </li>
 
@@ -77,18 +76,12 @@
           <li><span>MySQL*</span></li>
           <li><span>RethinkDB</span></li>
           <li><span>Core-Data*</span></li>
-          <li class='listNull'><span>null</span></li>
-          <li class='listNull'><span>null</span></li>
         </ul>
       </li>
 
       <li class='item'>Version Control
         <ul>
           <li><span>Git</span></lit>
-          <li class='listNull'><span>null</span></li>
-          <li class='listNull'><span>null</span></li>
-          <li class='listNull'><span>null</span></li>
-          <li class='listNull'><span>null</span></li>
         </ul>
       </li>
 
@@ -203,12 +196,14 @@
     font-weight: 300;
   }
   .list {
+    margin-top: 30px;
     padding-left: 0px;
     text-align: center;
     list-style-type: none;
   }
   .list .item {
     display: inline-block;
+    vertical-align: top;
     border: 15px solid white;
     font-size: 20px;
     color: red;
@@ -230,8 +225,9 @@
   }
   #relativelyProficient {
     font-size: 13px;
-    margin-bottom: 20px;
-    margin-left: -80px;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    margin-left: -50px;
     font-weight: 300;
     color: black;
   }
@@ -276,6 +272,9 @@
       display: inline;
       border: none;
       font-size: 50px;
+    }
+    .list ul {
+      margin-bottom: 50px;
     }
     .list ul li span {
       font-size: 40px;

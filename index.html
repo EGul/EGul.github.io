@@ -14,6 +14,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css' />
 
+    <meta name='viewPort' content='width=1200, user-scalable=no' />
+
   </head>
 
   <body>
@@ -24,7 +26,7 @@
     <div id='anotherSomething'>iOS and Web developer</div>
 
     <div id='poloygonSeaContainer'>
-      <div>
+      <div id='polygonSeaContainerCenter'>
         <canvas id='polygonSea' height='300' width='1200'></canvas>
       </div>
     </div>
@@ -96,13 +98,23 @@
 
     <script type='text/javascript'>
 
+    var rotateX = -70;
+    var translateZ = -25;
+    var translateY = -4;
+
+    if (screen.width < 500) {
+      rotateX = -55;
+      translateZ = -15
+      translateY = 2;
+    }
+
     var opts = {
       id: 'polygonSea',
       xBlocks: 10,
       yBlocks: 100,
-      rotateX: -70,
-      translateZ: -25,
-      translateY: -4,
+      rotateX: rotateX,
+      translateZ: translateZ,
+      translateY: translateY,
       color: [0.75, 0.25, 0.25, 1],
       gradientBlocks: 11,
       gradientTop: true,
@@ -128,7 +140,8 @@
   * {
     font-family: 'Open Sans';
   }
-  body {
+  html, body {
+    position: relative;
     overflow-x: hidden;
   }
   #something {
@@ -221,6 +234,57 @@
     margin-left: -80px;
     font-weight: 300;
     color: black;
+  }
+  @media (max-device-width: 500px) {
+    #linksContainer {
+      margin-top: 400px;
+      text-align: center;
+    }
+    #linksContainer span {
+      margin-left: 0px;
+      font-size: 50px;
+    }
+    #linksContainer span a {
+      font-size: 50px;
+    }
+    #something {
+      margin-top: -300px;
+      font-size: 100px;
+    }
+    #anotherSomething {
+      font-size: 44px;
+    }
+    #poloygonSeaContainer {
+      margin-top: 800px;
+    }
+    #polygonSeaLinkContainer {
+      margin-top: -50px;
+    }
+    #polygonSeaLinkContainer a {
+      font-size: 35px;
+    }
+    #summery {
+      font-size: 70px;
+    }
+    #summeryParagraph {
+      font-size: 27px;
+    }
+    .list {
+      margin-top: 100px;
+    }
+    .list .item {
+      display: inline;
+      border: none;
+      font-size: 50px;
+    }
+    .list ul li span {
+      font-size: 40px;
+    }
+    #relativelyProficient {
+      margin-left: 0px;
+      font-size: 25px;
+      font-weight: 400;
+    }
   }
   </style>
 

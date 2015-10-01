@@ -1,0 +1,24 @@
+
+#linksContainer {
+  margin-top: 125px;
+  text-align: center;
+}
+#linksContainer span {
+  margin-left: 0px;
+}
+#something {
+  margin-top: -125px;
+}
+.list  {
+  margin-top: 50px;
+}
+.list .item {
+  display: inline;
+  border: none;
+}
+.list ul {
+  margin-bottom: 25px;
+}
+#relativelyProficient {
+  margin-left: 0px;
+}

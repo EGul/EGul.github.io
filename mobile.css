@@ -1,0 +1,53 @@
+
+#linksContainer {
+  margin-top: 400px;
+  text-align: center;
+}
+#linksContainer span {
+  margin-left: 0px;
+  font-size: 50px;
+}
+#linksContainer span a {
+  font-size: 50px;
+}
+#something {
+  margin-top: -300px;
+  font-size: 100px;
+}
+#anotherSomething {
+  font-size: 44px;
+}
+#poloygonSeaContainer {
+  margin-top: 800px;
+}
+#polygonSeaLinkContainer {
+  margin-top: -50px;
+}
+#polygonSeaLinkContainer a {
+  font-size: 35px;
+}
+#summery {
+  font-size: 70px;
+}
+#summeryParagraph {
+  font-size: 27px;
+}
+.list {
+  margin-top: 100px;
+}
+.list .item {
+  display: inline;
+  border: none;
+  font-size: 50px;
+}
+.list ul {
+  margin-bottom: 50px;
+}
+.list ul li span {
+  font-size: 40px;
+}
+#relativelyProficient {
+  margin-left: 0px;
+  font-size: 25px;
+  font-weight: 400;
+}

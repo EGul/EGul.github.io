@@ -124,7 +124,7 @@
       tempInterval = setInterval(polygonSea.setMove, 25);
       moveInterval = setInterval(polygonSea.move, 50);
     }
-    move();
+    // move();
 
     </script>
 
@@ -178,7 +178,6 @@
   #linksContainer {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
   }
   #linksContainer span {
     margin-left: 5px;
@@ -231,6 +230,31 @@
     margin-left: -50px;
     font-weight: 300;
     color: black;
+  }
+  @media (max-width: 625px) {
+    #linksContainer {
+      margin-top: 125px;
+      text-align: center;
+    }
+    #linksContainer span {
+      margin-left: 0px;
+    }
+    #something {
+      margin-top: -125px;
+    }
+    .list  {
+      margin-top: 50px;
+    }
+    .list .item {
+      display: inline;
+      border: none;
+    }
+    .list ul {
+      margin-bottom: 25px;
+    }
+    #relativelyProficient {
+      margin-left: 0px;
+    }
   }
   @media (max-device-width: 500px) {
     #linksContainer {
